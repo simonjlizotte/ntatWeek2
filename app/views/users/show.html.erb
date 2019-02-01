@@ -51,8 +51,8 @@
   <tbody>
   <% @user.microposts.each do |post| %>
   <tr>
-    <td><% post.message %></td>
-    <td><% link_to "Post", post %></td>
+    <td><%= post.message %></td>
+    <td><%= link_to "Post", post %></td>
   </tr>
     <% end %>
   </tbody>
